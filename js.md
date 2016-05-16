@@ -18,3 +18,6 @@ console.timeEnd('String id');
 // Table pretty print
 console.table(object, [identifiers]);
 
+// OMG CSS
+console.log('%c OMG! OMG! OMG! OMG! ', 'background: #123; color: #bada55');
+
