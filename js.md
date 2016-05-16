@@ -12,5 +12,9 @@ console.groupEnd();
 console.count('fam');
 
 // Time measuring
-console.
+console.time('String id')
+console.timeEnd('String id');
+
+// Table pretty print
+console.table(object, [identifiers]);
 
