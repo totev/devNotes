@@ -1,0 +1,1 @@
+* agiledeveloper.com Notes and tips on coding in general, not language agnostic although a lot of java comes up.
