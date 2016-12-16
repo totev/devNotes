@@ -1,24 +1,30 @@
-Two way binding:
-<bam [(roar)]></bam>
+angular 2.x, 3.x, 4.x and god knows which new version
+====
 
-@Component({
-  selector: 'bam',
-  template: `
-    <span>{{roar}}</span>
-  `
-})
-export class BamComponent{
+Two way binding in components:
+    <bam [(roar)]></bam>
 
-@Input()
-roar:string;
+    @Component({
+      selector: 'bam',
+      template: `
+        <span>{{roar}}</span>
+      `
+    })
+    export class BamComponent{
 
-@Output()
-roarChange = new EventEmitter();
+    @Input()
+    roar:string;
 
-private doStuff(){
-  this.roar = "wow!";
-  //magic
-  this.roarChange.emit(this.roar);
-}
+    @Output()
+    roarChange = new EventEmitter();
 
-}
+      private doStuff(){
+        this.roar = "wow!";
+        //magic
+        this.roarChange.emit(this.roar);
+      }
+
+    }
+---
+Credits, sources and some links of interest for further reading:
+==
