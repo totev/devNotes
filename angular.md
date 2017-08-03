@@ -27,6 +27,12 @@ Two way binding in components:
     }
     // another alternative without any component configuration
     <input [value]="data" (input)="data = $event.target.value" />
+	
+	
+CSS
+===
+Try to use componenet based styles mixed with the global ones for better encapsulation and separation of concerns.	
+	
 ---
 Credits, sources and some links of interest for further reading:
 ==
