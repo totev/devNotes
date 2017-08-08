@@ -1,6 +1,7 @@
 ## Redux is a predictable state container for JavaScript apps.
 Basic principles:
   - hide logic from the components
+  - provide a solution for the Model vs View Model gap
 
 Main principles:
   1. everything that changes in the application AND the ui state is stored into the *state object/state tree*
@@ -47,3 +48,8 @@ Avoid array mutations in state:
 and return a new array treating the old one as immutable
 
 Use object property overwriting with Object.assign to change only the needed fields.
+
+Credits, sources and some links of interest for further reading:
+--
+* https://egghead.io/lessons/javascript-redux-describing-state-changes-with-actions
+* http://redux.js.org/docs/basics/
