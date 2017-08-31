@@ -44,6 +44,33 @@ http://blog.angular-university.io/angular-component-design-how-to-avoid-custom-e
 
 http://blog.angular-university.io/onpush-change-detection-how-it-works/
 
+
+### Lifecycle
+
+Load something in the init phase of the application:
+
+    // @see https://angular.io/api/core/APP_INITIALIZER
+    import { APP_INITIALIZER, ErrorHandler, NgModule } from '@angular/core';
+    ...
+    export function StartupFactory(config: ConfigurationService): Function {
+      return () => config.load();
+    }
+    ...
+    @NgModule({
+      declarations: [],
+      imports: [],
+      providers: [
+        ...,
+        {
+          provide: APP_INITIALIZER,
+          useFactory: StartupFactory,
+          deps: [ConfigurationService],
+          multi: true
+        }
+      ],
+      bootstrap: [AppComponent]
+    })
+
 CSS
 ===
 Try to use component based styles mixed with the global ones for better encapsulation and separation of concerns.
