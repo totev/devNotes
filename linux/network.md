@@ -11,3 +11,7 @@ Useful filters:
 Or with netcat (because the name is soo cool):
 	remote box: nc -l 5000
 	local box: nc -z -v REMOTE_BOX_NAME 5000
+	
+	
+### Which machines are online in the same network
+	nmap -sP X.X.X.0/24
