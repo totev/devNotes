@@ -10,6 +10,9 @@
 
 
 
+## Documentation
+Clear and nice documentation on the main site. Nothing overcomplicated.
+
 ## Code splitting
 Best use case - Routes
 
