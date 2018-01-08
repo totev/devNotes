@@ -2,6 +2,7 @@ Network
 ===
 Which ports are wired:
 		netstat --listen
+		netstat -l
 		lsof -i
 		
 Useful filters:

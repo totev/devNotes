@@ -17,12 +17,33 @@ Clear and nice documentation on the main site. Nothing overcomplicated.
 Best use case - Routes
 
 Some usecases:
+
  - Route
  	- via async import: `const Something = () => import('@/page/Something') 
  - Component
  	- via async import
  - Lifecycle
  	- via async import, conditional
+	
+	
+## Progressive Web Applications
+	vue init pwa new-project	
+
+Caveats:
+
+ - ServiceWorkers can't use websockets 
+ 
+## E2E Testing
+
+
+
+## Tools
+ 
+Testing:
+
+ - vue-test-utils -> will soon become the official test package
+ - eslint-plugin-vue -> template support  
+ - vue-cli 3.0
  
 
 Credits, sources and some links of interest for further reading:
