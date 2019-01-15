@@ -3,7 +3,7 @@ Network
 Which ports are wired:
 		netstat --listen
 		netstat -l
-		lsof -i
+		lsof -i :PORT_NUMBER
 		
 Useful filters:
 		// all open IPV4 connections from PID
